@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #121212; /* Dark theme background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f; /* Darker header background */
+    color: #e0e0e0;
+    border-bottom: 1px solid #333;
+}
+
+header .marquee-container {
+    background-color: #1a1a1a; /* Slightly darker marquee background */
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #1f1f1f;
+}
+
+header nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffffff; /* Highlight on hover */
+}
+
+/* Family Intro Section */
+.family-intro {
+    text-align: center;
+    padding:  10px;
+    background-color: #1e1e1e;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.family-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.family-intro p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Family Members Section */
+.family-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.family-member {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.family-member img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.family-member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.family-member p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.family-member:hover {
+    transform: scale(1.05);
+}
+
+/* Family Gallery Section */
+.family-gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.family-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #cccccc;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .family-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

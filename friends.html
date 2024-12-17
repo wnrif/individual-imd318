@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #1F1F1F;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        .marquee {
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            padding: 5px 0;
+            text-align: center;
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .friends-section {
+            margin-bottom: 40px;
+        }
+
+        .friends-section h1 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .friend-item {
+            display: block;
+            text-align: center;
+            margin: 15px auto;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 12px;
+            background-color: #1F1F1F;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .friend-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .friend-item img {
+            width: 95%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 2px solid #FFFFFF;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <header>
+        <h1>My Friends</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="family.html">Family</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="friends.html">Friends</a>
+        </nav>
+    </header>
+
+    
+    <div class="marquee">
+        <p>"True friends are like stars. You don't always see them, but you know they're always there."</p>
+    </div>
+
+    
+    <section class="friends-section">
+        <h1>School Friends</h1>
+        <div class="friend-item">
+            <img src="images/friend1.jpg" alt="Emma">
+        </div>
+        <div class="friend-item">
+            <img src="images/friend3.jpg" alt="Liam">
+        </div>
+        <div class="friend-item">
+            <img src="images/friend2.jpg" alt="Sophia">
+        </div>
+    </section>
+
+    <section class="friends-section">
+        <h1>University Friends</h1>
+        <div class="friend-item">
+            <img src="images/uni1.jpg" alt="Alex">
+        </div>
+        <div class="friend-item">
+            <img src="images/uni2.jpg" alt="Mia">
+        </div>
+        <div class="friend-item">
+            <img src="images/uni3.jpg" alt="Ethan">
+        </div>
+    </section>
+	
+	<section class="friends-section">
+    <h1>Table of Appreciation</h1>
+    <table style="width: 80%; margin: 0 auto; border-collapse: collapse; text-align: center; background-color: #333; color: #FFF;">
+        <thead>
+            <tr style="background-color: #444;">
+                <th style="padding: 10px; border: 1px solid #555;">No</th>
+                <th style="padding: 10px; border: 1px solid #555;">Name</th>
+                <th style="padding: 10px; border: 1px solid #555;">Role</th>
+                <th style="padding: 10px; border: 1px solid #555;">Contribution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #555;">1</td>
+                <td style="padding: 10px; border: 1px solid #555;">Alis</td>
+                <td style="padding: 10px; border: 1px solid #555;">Supportive and Beautiful</td>
+                <td style="padding: 10px; border: 1px solid #555;">Always there when needed</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #555;">2</td>
+                <td style="padding: 10px; border: 1px solid #555;">Izzat Ali </td>
+                <td style="padding: 10px; border: 1px solid #555;">Motivator and Favourite Roomate</td>
+                <td style="padding: 10px; border: 1px solid #555;">Encourages me to achieve more</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #555;">3</td>
+                <td style="padding: 10px; border: 1px solid #555;">Syidi Zaim</td>
+                <td style="padding: 10px; border: 1px solid #555;">Funny and Creative Thinker</td>
+                <td style="padding: 10px; border: 1px solid #555;">Helps brainstorm ideas</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #555;">4</td>
+                <td style="padding: 10px; border: 1px solid #555;">Adi Farhan</td>
+                <td style="padding: 10px; border: 1px solid #555;">Problem Solver and Gym Coach</td>
+                <td style="padding: 10px; border: 1px solid #555;">Helps find solutions to challenges</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #555;">5</td>
+                <td style="padding: 10px; border: 1px solid #555;">Nur</td>
+                <td style="padding: 10px; border: 1px solid #555;">Listener</td>
+                <td style="padding: 10px; border: 1px solid #555;">Always listens and supports me</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    <audio controls autoplay>
+        <source src="audio/friends.mp3" type="audio/mp3">
+    </audio>
+    <p>&copy; 2024 My Portfolio. Wan Arif Ferdaus.</p>
+</footer>
+
+</body>
+</html>

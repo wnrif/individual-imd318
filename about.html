@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; 
+            color: #fff; 
+        }
+
+        header {
+            background-color: #222; 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        
+        header .logo {
+            font-size: 25px; 
+            font-weight: bold; 
+            color: white; 
+            text-decoration: none; 
+        }
+
+       
+        header .logo {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        header nav a {
+            margin:  15px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #about {
+            padding: 20px;
+            background-color: #444; 
+            text-align: center;
+            color: #fff;
+        }
+
+        .timeline {
+            position: relative;
+            min-width: 100%; 
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            justify-content: flex-start;
+            animation: scroll-right-to-left 20s linear infinite;
+            overflow-x: visible; 
+        }
+
+        .timeline-item {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin: 0 15px;
+            width: 250px;
+            background-color: #444; 
+            border-radius: 10px;
+            border: 2px solid #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            color: #fff; 
+        }
+
+        .timeline-item .year {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f0f0f0; 
+        }
+
+        .timeline-item .event {
+            font-size: 18px;
+            color: #ddd; 
+            margin-top: 10px;
+        }
+
+        .timeline-item img {
+            width: 200px; 
+            height: 200px;
+            object-fit: cover; 
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 2px solid #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        .timeline-item img:hover {
+            transform: scale(1.1); 
+        }
+
+        @keyframes scroll-right-to-left {
+            0% {
+                transform: translateX(100%); 
+            }
+            100% {
+                transform: translateX(-100%); 
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222; 
+            color: #fff; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">My Portfolio</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="family.html">Family</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="friends.html">Friends</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Wan Arif Ferdaus, but usually, my friends just call me Wan. I'm 20 years old, and I was born and raised in Batu Gajah, Perak. 
+		I'm the oldest son in my family and I have 2 younger siblings.</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">2004</div>
+                <div class="event">Born in Batu Gajah</div>
+                <img src="images/about1.jpg" alt="Born in Batu Gajah, Perak">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2008</div>
+                <div class="event">Started Kindergarten</div>
+                <img src="images/about4.jpg" alt="Started Kindergarten">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2009</div>
+                <div class="event">Ended Kindergarten</div>
+                <img src="images/about7.jpg" alt="Finished Kindergarten">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2010</div>
+                <div class="event">Started Primary School</div>
+                <img src="images/about6.jpg" alt="Started Primary School">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2017</div>
+                <div class="event">Started High School</div>
+                <img src="images/about8.jpg" alt="Started High School">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2021</div>
+                <div class="event">Graduated High School</div>
+                <img src="images/about9.jpg" alt="High School Graduation">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2022</div>
+                <div class="event">Started University</div>
+                <img src="images/about11.jpg" alt="Started University">
+            </div>
+            <div class="timeline-item">
+                <div class="year">2024</div>
+                <div class="event">Currently Studying </div>
+                <img src="images/about10.jpg" alt="Currently studying">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. Wan Arif Ferdaus.</p>
+		 <div class="social-media">
+            <a href="https://www.facebook.com/share/19NKkZAEBw/?mibextid=wwXIfr" target="_blank">
+                <img src="icons/facebook.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://www.instagram.com/wanarif.____/profilecard/?igsh=bWI5bXJub3Z5aWVu" target="_blank">
+                <img src="icons/instagram.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://www.youtube.com/@wnrif" target="_blank">
+                <img src="icons/youtube.png" alt="YouTube" width="30">
+            </a>
+            <a href="www.linkedin.com/in/wan-arif-ferdaus-0a25a1237" target="_blank">
+                <img src="icons/linkedin.png" alt="LinkedIn" width="30">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Achievements</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f; /* Dark old money background */
+            color: white; /* White text */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333; /* Dark header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Achievements Section */
+        section {
+            padding: 30px 20px;
+            margin: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Achievement Item Layout */
+        .achievement-item {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: #3b3b3b; /* Slightly lighter dark background */
+            padding: 20px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .achievement-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 255, 0.4);
+        }
+
+        .achievement-img {
+            flex: 1;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .achievement-img img {
+            width: 100%;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover;
+            border-radius: 8px;
+            border: 5px solid #4e4a42; /* Dark border */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .achievement-img img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .achievement-description {
+            flex: 2;
+            color: white;
+        }
+
+        .achievement-description h3, .achievement-description h4 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+ {
+    margin-top: 10px;
+    width: 100%; /* Makes the player span the footer width */
+    max-width: 300px; /* Limits the player's maximum width */
+}
+    </style>
+</head>
+<body>
+
+ 
+    <header>
+        <h1>My Achievements</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="family.html">Family</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="friends.html">Friends</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Academic Achievements</h2>
+
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive10.jpg" alt="Academic Achievement Image 1">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive11.jpg" alt="Academic Achievement Image 2">
+            </div>
+            <div class="achievement-description">
+                <h3>4As in SPM</h3>
+                <p>Finishing high school with 4As in my SPM is a moment I’m truly proud of. It represents the hard work, dedication, and support I received along the way. This milestone isn’t just about grades—it’s about growth, persistence, and the lessons I’ve learned. I’m excited to carry this achievement forward as I continue to strive for success in the future.</p>
+            </div>
+        </article>
+
+        
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive12.jpg" alt="Academic Achievement Image 3">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive9.jpg" alt="Academic Achievement Image 4">
+            </div>
+            <div class="achievement-description">
+                <h4>Diploma in Information Management</h4>
+                <p>I am excited to begin my Diploma in Information Management at Universiti Teknologi MARA (UiTM). I look forward to learning and growing in this field to build a strong foundation for my future.</p>
+            </div>
+        </article>
+
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive3.jpg" alt="Academic Achievement Image 5">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive4.jpg" alt="Academic Achievement Image 6">
+            </div>
+            <div class="achievement-description">
+                <h4>Received an Outstanding Achievement Award for Students with Disabilities</h4>
+                <p>Grateful and honored to receive the Outstanding Achievement Award for Students with Disabilities! This recognition is a reminder that with perseverance, determination, and the support of those around me, no obstacle is too great.</p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h2>Sports Achievements</h2>
+
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive7.jpg" alt="Sports Achievement Image 1">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive5.jpg" alt="Sports Achievement Image 2">
+            </div>
+            <div class="achievement-description">
+                <h4>Champion in Malaysia Amputee Football Tournament</h4>
+                <p>Winning the Malaysia Amputee Football Tournament in Kelantan and being named MVP was an unforgettable experience. It was the culmination of relentless dedication, teamwork, and overcoming challenges. This victory filled me with immense pride, knowing that all the hard work and perseverance paid off in such a competitive environment.</p>
+            </div>
+        </article>
+
+       
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive6.jpg" alt="Sports Achievement Image 3">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive8.jpg" alt="Sports Achievement Image 4">
+            </div>
+            <div class="achievement-description">
+                <h4>Winning Second place and Awarded Most Valuable Player</h4>
+                <p>Securing second place and being awarded MVP at the Amputee Football Tournament during Hari Sukan Negara 2024 was an unforgettable achievement. It reflects the countless hours of training, unwavering determination, and the incredible support from my team. This recognition means so much to me, and I’m proud to have been part of such a memorable and inspiring event.</p>
+            </div>
+        </article>
+
+        
+        <article class="achievement-item">
+            <div class="achievement-img">
+                <img src="images/achive2.jpg" alt="Sports Achievement Image 5">
+            </div>
+            <div class="achievement-img">
+                <img src="images/achive1.jpg" alt="Sports Achievement Image 6">
+            </div>
+            <div class="achievement-description">
+                <h4>Winning first place and third place in the Championship Sirkit 1 Para Swimming</h4>
+                <p>Taking first and third place in the Championship Sirkit 1 Para Swimming MSN/PREPMA/ALLIANZ 2024 was an amazing experience. It wouldn’t have been possible without all the hard work and support along the way. Feeling proud of how far I’ve come and excited for what’s next!</p>
+            </div>
+        </article>
+    </section>
+
+    
+    <<footer>
+	<audio controls>
+        <source src="audio/champ.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <p>&copy; 2024 My Achievements. Wan Arif Ferdaus.</p>
+    
+</footer>
+
